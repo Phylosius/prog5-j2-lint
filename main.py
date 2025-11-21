@@ -1,4 +1,4 @@
-class Wallet:
+class wallet:
     def __init__(self, couleur, taille):
         self.couleur = couleur
         self.taille = taille
@@ -6,7 +6,7 @@ class Wallet:
         self.isOpen = True
         self.isLost = False
 
-    def addVola(self, amount):
+    def addvola(self, amount):
         self.vola += amount
 
     def getVola(self, amount):
