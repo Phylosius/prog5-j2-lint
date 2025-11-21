@@ -29,11 +29,11 @@ exclude = [
 ]
 
 # Same as Black.
-line-length = 88
-indent-width = 4
+lineLength = 88
+indentWidth = 4
 
 # Assume Python 3.11
-target-version = "py311"
+targetVersion = "py311"
 
 [lint]
 # Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`) codes by default.
@@ -47,31 +47,31 @@ fixable = ["ALL"]
 unfixable = []
 
 # Allow unused variables when underscore-prefixed.
-dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+dummyVariableRgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [format]
 # Like Black, use double quotes for strings.
-quote-style = "double"
+quoteStyle = "double"
 
 # Like Black, indent with spaces, rather than tabs.
-indent-style = "space"
+indentStyle = "space"
 
 # Like Black, respect magic trailing commas.
-skip-magic-trailing-comma = false
+skipMagicTrailingComma = false
 
 # Like Black, automatically detect the appropriate line ending.
-line-ending = "auto"
+lineEnding = "auto"
 
 # Enable auto-formatting of code examples in docstrings. Markdown,
 # reStructuredText code/literal blocks and doctests are all supported.
 #
 # This is currently disabled by default, but it is planned for this
 # to be opt-out in the future.
-docstring-code-format = false
+docstringCodeFormat = false
 
 # Set the line length limit used when formatting code snippets in
 # docstrings.
 #
-# This only has an effect when the `docstring-code-format` setting is
+# This only has an effect when the `docstringCodeFormat` setting is
 # enabled.
-docstring-code-line-length = "dynamic"
+docstringCodeLineLength = "dynamic"
