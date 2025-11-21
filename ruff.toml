@@ -1,58 +1,19 @@
-# Exclude a variety of commonly ignored directories.
-exclude = [
-    ".bzr",
-    ".direnv",
-    ".eggs",
-    ".git",
-    ".git-rewrite",
-    ".hg",
-    ".ipynb_checkpoints",
-    ".mypy_cache",
-    ".nox",
-    ".pants.d",
-    ".pyenv",
-    ".pytest_cache",
-    ".pytype",
-    ".ruff_cache",
-    ".svn",
-    ".tox",
-    ".venv",
-    ".vscode",
-    "__pypackages__",
-    "_build",
-    "buck-out",
-    "build",
-    "dist",
-    "node_modules",
-    "site-packages",
-    "venv",
+[tool.ruff]
+
+# Exclude this file itself
+exclude = ["ruff.toml"]
+
+# What rules to enable
+select = [
+    "E",
+    "W",
+    "N",
 ]
 
-# Same as Black.
-line-length = 88
-indent-width = 4
-
-# Assume Python 3.11
-target-version = "py311"
-
-[lint]
-select = ["E4", "E7", "E9", "F"]
-ignore = []
-
-fixable = ["ALL"]
-unfixable = []
-
-# Allow unused variables when underscore-prefixed.
-dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
-
-[format]
-quote-style = "double"
-indent-style = "space"
-skip-magic-trailing-comma = false
-line-ending = "auto"
-
-# Enable auto-formatting of code examples in docstrings.
-docstring-code-format = false
-
-# Line length limit for docstring code blocks.
-docstring-code-line-length = "dynamic"
+[naming]
+class-case = "PascalCase"
+function-case = "camelCase"
+variable-case = "camelCase"
+constant-case = "UPPER_CASE"
+argument-case = "camelCase"
+attribute-case = "camelCase"
